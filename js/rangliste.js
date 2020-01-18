@@ -35,8 +35,8 @@ var doSave = false;
 var counter = 0;
 
 function preload() {
-  map = loadImage('img/weltkarte.png');
-  font = loadFont('font/Montserrat-SemiBold.ttf');
+  map = loadImage('../img/weltkarte.png');
+  font = loadFont('../font/Montserrat-SemiBold.ttf');
 }
 
 async function setup() {
@@ -46,8 +46,8 @@ async function setup() {
   noStroke();
 
   // Load Data
-  data = await loadData('renewables_pop.csv'); // Current Data for sortedData
-  futureData = await loadData('renewables_pop.csv'); // Current Data for nextSortedData
+  data = await loadData('../renewables_pop.csv'); // Current Data for sortedData
+  futureData = await loadData('../renewables_pop.csv'); // Current Data for nextSortedData
   //  console.log(data);
 
 

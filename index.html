@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Renewable Energy</title>
+
+        <script src="libraries/d3.v5.min.js"></script>
+        <script src="libraries/p5.js"></script>
+        <script src="libraries/p5.dom.js"></script>
+        <script src="libraries/p5.sound.js"></script>
+        <script src="libraries/lodash.min.js"></script>
+        <script src="libraries/utils.js"></script>
+        <!--    <script src="sketch.js"></script>-->
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                /* overflow: hidden; */
+                background-color: 'black';
+                background-image: url(img/indexBG.jpg);
+            }
+
+            canvas {
+                margin: auto;
+            }
+
+            section {
+                width: 100%;
+            }
+
+            .flex {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            .outerWrapper {
+                height: 100vh;
+            }
+
+            .flewWrapper {
+                margin: 0 auto;
+            }
+
+            button {
+                width: 20%;
+                height: 250px;
+                margin: 20px 2%;
+                padding: 20px;
+                background-color: rgba(255,255,255, 0.7);
+                border: 1px solid black;
+                font-family: 'Century Gothic';
+                
+            }
+
+            button h1{
+                font-size: 25px;
+                font-weight: 900;
+            }
+
+            button p{
+                font-size: 18px;
+                font-weight: 100;
+                text-align: left;
+                word-break: break-word;
+                hyphens: auto;
+            }
+
+            button h1, button p{
+                margin: 5px;
+            }
+
+            button:hover {
+                background-color: rgba(255,255,255, 0.9);
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <section class="outerWrapper flex">
+            <section class="flewWrapper flex">
+                <button>
+                    <a href="display/rangliste.html">
+                        <h1>Rangliste</h1>
+                        <p>Die Rangliste war unser Hauptprojekt und das Ergebnis, auf welches wir bei der Präsentation am meisten eingegangen sind.</p>
+                    </a>
+                </button>
+                <button>
+                    <a href="display/weltkarte.html">
+                        <h1>Weltkarte Statisch</h1>
+                        <p>Unsere alternative Darstellung der Daten als Weltkarte. Bei diesem Ergebnis durften sich die Kreise nicht überlappen.</p>
+                    </a>
+                </button>
+                <button>
+                    <a href="display/weltkarteAnimiert.html">
+                        <h1>Weltkarte Animiert</h1>
+                        <p>Eine animierte Version der Weltkarten-darstellung. Dieses Exemplar konnten wir nur dank Christian fertigstellen, möchten es aber trotzdem auf GitHub präsentieren.</p>
+                    </a>
+                </button>
+            </section>
+        </section>
+    </body>
+</html>
